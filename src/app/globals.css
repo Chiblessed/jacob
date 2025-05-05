@@ -1,26 +1,111 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+body {
+  font-family: 'Clash Display';
+  background: #E5E5E5;
+}
+@font-face{
+  font-family: 'Clash Display';
+  src: url('/font/Clashdisplay/ClashDisplay-Bold.woff2') format('woff2'),
+  url('/font/Clashdisplay/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face{
+  font-family: 'Clash Display';
+  src: url('/font/Clashdisplay/ClashDisplay-Semibold.woff2') format('woff2'),
+  url('/font/Clashdisplay/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+}
+@font-face{
+  font-family: 'Clash Display';
+  src: url('/font/Clashdisplay/ClashDisplay-Medium.woff2') format('woff2'),
+  url('/font/Clashdisplay/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face{
+  font-family: 'Clash Display';
+  src: url('/font/Clashdisplay/ClashDisplay-Regular.woff2') format('woff2'),
+  url('/font/Clashdisplay/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Clash Display';
+  src: url('/font/Clashdisplay/ClashDisplay-Light.woff2') format('woff2'),
+  url('/font/Clashdisplay/ClashDisplay-Light.woff') format('woff');
+  font-weight: 300;
+}
+@font-face{
+  font-family: 'Clash Display';
+  src: url('/font/Clashdisplay/ClashDisplay-Extralight.woff2') format('woff2'),
+  url('/font/Clashdisplay/ClashDisplay-Extralight.woff') format('woff');
+  font-weight: 200;
+}
+.wrapper{
+  width:100%;
+  max-width: 1380px;
+  margin-inline: auto;
+  position: relative;
+  height: 70px;
+ overflow: hidden;
+ mask-image: linear-gradient(to right,
+ rgba(0, 0, 0, 0),
+ rgba(0, 0, 0, 1) 20%,
+ rgba(0, 0, 0, 1) 80%,
+ rgba(0, 0, 0, 0)
+);
+
+}
+
+@keyframes scrollLeft{
+  to{
+      left: -100px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.item{
+  width: 100px;
+  border-radius: 6px;
+  margin-top: 20px;
+  position: absolute;
+  left: max(calc(100px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.item1{
+  animation-delay: calc(30s / 8 *(8 - 1) * -1);
+  
+}
+.item2{
+  animation-delay: calc(30s / 8 *(8 - 2) * -1);
+  
+}
+.item3{
+  animation-delay: calc(30s / 8 *(8 - 3) * -1);
+  
+}
+.item4{
+  animation-delay: calc(30s / 8 *(8 - 4) * -1);
+  
+}
+.item5{
+  animation-delay: calc(30s / 8 *(8 - 5) * -1);
+  
+}
+.item6{
+  animation-delay: calc(30s / 8 *(8 - 6) * -1);
+  
+}
+.item7{
+  animation-delay: calc(30s / 8 *(8 - 7) * -1);
+  
+}
+.item8{
+  animation-delay: calc(30s / 8 *(8 - 8) * -1);
+  
 }
