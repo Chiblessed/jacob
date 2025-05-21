@@ -35,7 +35,7 @@ getMedia.revert();
   }, [])
     return (
     <>
-      <main ref={containerRef} className='mx-4  mt-20  max-lg:mx-0'>
+      <main ref={containerRef} className='mx-4  max-sm:mx-4 mt-20  max-lg:mx-0'>
         <section className='flex items-start justify-between gap-10 max-lg:flex-col max-lg:min-h-0 sticky top-0 min-h-[200vh] max-sm:flex-col max-sm:min-h-0 max-sm:gap-0'>
             <div ref={leftRef} className=' leftRef flex flex-col items-start  h-screen sm:h-1/2  max-sm:h-1/2'>
                 <h2 className='text-6xl font-medium uppercase  w-[20rem] max-sm:w-full  max-sm:text-4xl '>
