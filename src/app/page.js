@@ -71,7 +71,7 @@ export default function Home() {
     <> 
 <main ref={containerRef} className="bg-[#E5E5E5] h-[120vh] absolute top-0 right-0 w-[100%] z-50 overflow-hidden">
   <section>
-    <p  ref={sectionRef} className="text-2xl font-medium flex items-center justify-center  absolute top-[40%] left-[40%]">
+    <p  ref={sectionRef} className="text-2xl font-medium flex items-center justify-center  absolute top-[40%] max-sm:left-[25%] left-[40%]">
     <span className="pr-2">
       Jacob 
       </span>   

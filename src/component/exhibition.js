@@ -48,7 +48,7 @@ function Exhibition() {
                     </div>
 
                 </div>
-                <div className='flex items-center justify-between  w-1/2'>
+                <div className='flex items-center justify-between  w-1/2 max-sm:w-full'>
                     <div className='flex items-center justify-center gap-3'>
                         <p className='text-lg text-[#DB574D]'>Buy Ticket</p>
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@ function Exhibition() {
                     </div>
 
                 </div>
-                <div className='flex items-center justify-between  w-1/2'>
+                <div className='flex items-center justify-between  w-1/2  max-sm:w-full'>
                     <div className='flex items-center justify-center gap-3'>
                         <p className='text-lg text-[#DB574D]'>Buy Ticket</p>
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +126,7 @@ function Exhibition() {
                     </div>
 
                 </div>
-                <div className='flex items-center justify-between  w-1/2'>
+                <div className='flex items-center justify-between  w-1/2  max-sm:w-full'>
                     <div className='flex items-center justify-center gap-3'>
                         <p className='text-lg text-[#DB574D]'>Buy Ticket</p>
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
